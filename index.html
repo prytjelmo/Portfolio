@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Waterfall&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <!-- Left -->
+            <div class="logo">
+                <a href="#">
+                    <h1>MAW</h1>
+                </a>
+            </div>
+
+            <!-- Center -->
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-btn" id="theme-toggle" type="button" aria-label="Switch to dark theme">
+                    <span class="theme-icon">&#9790;</span>
+                </button>
+
+                <button class="menu-btn" id="menu-toggle" type="button" aria-label="Open navigation menu"
+                    aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <!-- Hero Content -->
+        <div class="hero-content">
+
+            <div class="availability" id="availability">
+                <div class="status-dot"></div>
+                <span>Available for work</span>
+            </div>
+
+            <p class="hero-greeting">
+                Hi, I'm
+            </p>
+
+            <h1 class="hero-name">
+                <span id="typing"></span>
+                <span class="cursor">|</span>
+            </h1>
+
+            <p class="hero-role">
+                Front-End Developer, UI/UX Designer, Technical Writer
+                <br>
+                Inspired by design. Driven by code.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#projects" class="btn-viewwork">
+                    View My Work
+                    <i class="fa-solid fa-code"></i>
+                </a>
+
+                <a href="#contact" class="btn-letstalk">
+                    Let's Talk
+                    <i class="fa-solid fa-comment"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <section id="about">
+
+        <div class="about-container">
+            <!-- Left -->
+            <div class="about-image">
+                <img src="img/portfolio profile.jpg" alt="Profile">
+
+                <div class="image-overlay">
+
+                    <h2>Prytj Elmo G. Quimbo</h2>
+                    <p>Front-End Developer</p>
+
+                </div>
+
+                <div class="experience-card">
+
+                    <h2>4+</h2>
+                    <p>YEARS EXP</p>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+            <div class="about-content">
+                <span class="section-tag">
+                    About Me
+                </span>
+
+                <h2>
+                    Passionate About Building
+                    <span>Modern Digital Experiences</span>
+                </h2>
+
+                <p>
+                    I'm a Front-End Developer with a passion for creating responsive,
+                    visually engaging, and user-friendly web applications that deliver
+                    seamless experiences across every device.
+                </p>
+
+                <p>
+                    I also specialize in UI/UX Design, transforming ideas into intuitive
+                    interfaces that balance aesthetics and functionality while keeping
+                    users at the center of every decision.
+                </p>
+
+                <p>
+                    Beyond design and development, I enjoy Technical Writing—creating
+                    clear documentation, tutorials, and guides that make technology
+                    easier to understand.
+                </p>
+
+                <div class="about-buttons">
+
+                    <a href="Resume/Quimbo_Resume.pdf" class="about-btn-outline">
+                        Download CV
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="skills">
+
+        <div class="section-title">
+            <h2>Skills & Technologies</h2>
+            <p>The technologies I use to build modern web applications.</p>
+        </div>
+
+        <!-- Current Skills -->
+        <h3 class="skills-heading">Tech Stack</h3>
+
+        <div class="skills-slider">
+
+            <div class="skills-track">
+
+                <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+
+                <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+
+                <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+
+                <div class="skill-card"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></div>
+
+                <div class="skill-card"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+
+                <div class="skill-card"><i class="fa-solid fa-database"></i><span>MariaDB</span></div>
+
+                <div class="skill-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+
+                <div class="skill-card"><i class="fa-solid fa-code"></i><span>C#</span></div>
+
+                <div class="skill-card"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+
+                <!-- Duplicate for seamless loop -->
+
+                <div class="skill-card"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+
+                <div class="skill-card"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+
+                <div class="skill-card"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+
+                <div class="skill-card"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap</span></div>
+
+                <div class="skill-card"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+
+                <div class="skill-card"><i class="fa-solid fa-database"></i><span>MariaDB</span></div>
+
+                <div class="skill-card"><i class="fa-brands fa-java"></i><span>Java</span></div>
+
+                <div class="skill-card"><i class="fa-solid fa-code"></i><span>C#</span></div>
+
+                <div class="skill-card"><i class="fa-brands fa-figma"></i><span>Figma</span></div>
+
+            </div>
+
+        </div>
+
+        <!-- Learning -->
+
+        <h3 class="skills-heading learning">
+            Currently Learning
+        </h3>
+
+        <div class="skills-slider reverse">
+
+            <div class="skills-track">
+
+                <div class="skill-card learning-card"><i class="fa-brands fa-laravel"></i><span>Laravel</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-solid fa-mobile-screen"></i><span>Flutter</span>
+                </div>
+
+                <div class="skill-card learning-card"><i class="fa-solid fa-fire"></i><span>Firebase</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-brands fa-laravel"></i><span>Laravel</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-solid fa-mobile-screen"></i><span>Flutter</span>
+                </div>
+
+                <div class="skill-card learning-card"><i class="fa-solid fa-fire"></i><span>Firebase</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-brands fa-laravel"></i><span>Laravel</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-solid fa-mobile-screen"></i><span>Flutter</span>
+                </div>
+
+                <div class="skill-card learning-card"><i class="fa-solid fa-fire"></i><span>Firebase</span></div>
+
+                <!-- duplicate for seamless loop -->
+
+                <div class="skill-card learning-card"><i class="fa-brands fa-laravel"></i><span>Laravel</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-solid fa-mobile-screen"></i><span>Flutter</span>
+                </div>
+
+                <div class="skill-card learning-card"><i class="fa-solid fa-fire"></i><span>Firebase</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-brands fa-laravel"></i><span>Laravel</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-solid fa-mobile-screen"></i><span>Flutter</span>
+                </div>
+
+                <div class="skill-card learning-card"><i class="fa-solid fa-fire"></i><span>Firebase</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-brands fa-laravel"></i><span>Laravel</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-brands fa-node-js"></i><span>Node.js</span></div>
+
+                <div class="skill-card learning-card"><i class="fa-solid fa-mobile-screen"></i><span>Flutter</span>
+                </div>
+
+                <div class="skill-card learning-card"><i class="fa-solid fa-fire"></i><span>Firebase</span></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+            <p>Some of the projects I've built throughout my journey.</p>
+        </div>
+
+        <!-- Project 1 -->
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="img/hapsay.png" alt="Hapsay">
+            </div>
+
+            <div class="project-info">
+
+                <span class="project-number">
+                    01
+                </span>
+
+                <h3>Hapsay</h3>
+
+                <p>
+                    Hapsay is a cutting-edge cemetery mapping system designed to bring harmony and organization to
+                    burial grounds. By leveraging advanced technology, Hapsay offers seamless booking experiences and
+                    ensures tranquil spaces for eternal peace. With intuitive navigation and precise mapping, Hapsay
+                    provides families and caretakers with a streamlined solution for managing gravesites and
+                    commemorating loved ones. Say goodbye to confusion and inefficiency – Hapsay brings order and
+                    serenity to the sacred resting places of our dearly departed.
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>Native PHP</span>
+                    <span>MySQL</span>
+                    <span>HTML5</span>
+                    <span>Bootstrap</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="project-card reverse">
+
+            <div class="project-image">
+                <img src="img/rkworks.png" alt="rkworks">
+            </div>
+
+            <div class="project-info">
+
+                <span class="project-number">
+                    02
+                </span>
+
+                <h3>RK Works Richkid Racingparts and Tuning POS and Inventory System</h3>
+
+                <p>
+                    RK Works Richkid Racingparts and Tuning POS and Inventory System is a desktop-based Point-of-Sale
+                    (POS) and Inventory Management System developed to automate the daily business operations of RK
+                    Works. The system streamlines sales transactions, inventory tracking, supplier and customer
+                    management, service records, and report generation. By replacing the company's manual logbook-based
+                    process with a digital solution, it improves transaction accuracy, inventory monitoring, and overall
+                    operational efficiency while providing real-time stock updates and comprehensive sales reports.
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>C++</span>
+                    <span>MySQL</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="img/awbs.png" alt="AWBS">
+            </div>
+
+            <div class="project-info">
+
+                <span class="project-number">
+                    03
+                </span>
+
+                <h3>AWBS</h3>
+
+                <p>
+                    AWBS (Apartment Water Billing System) is a desktop-based billing and customer management system
+                    designed to automate the water billing operations of a water service provider. The system enables
+                    administrators to manage customer records, generate and monitor water bills, process payments,
+                    maintain user accounts, and generate reports. It provides real-time dashboard analytics, including
+                    customer statistics, paid and pending bills, and total collections, helping improve billing
+                    accuracy, operational efficiency, and record management.
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>C#</span>
+                    <span>MS SQL Server</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="project-card reverse">
+
+            <div class="project-image">
+                <img src="img/aklatura.png" alt="Alklatura">
+            </div>
+
+            <div class="project-info">
+
+                <span class="project-number">
+                    04
+                </span>
+
+                <h3>Aklatura</h3>
+
+                <p>
+                    Aklatura is a Library Management System created to help school libraries run more efficiently.
+                    Designed to improve how library resources are organized, accessed, and monitored, it serves as a
+                    centralized platform for students, professors, and librarians that provides easy access to knowledge
+                    and acts as an efficient partner in managing library resources. Simplifying borrowing and returning
+                    process, ensures timely notifications for overdue items, and maintains accurate records of
+                    transactions. Aklatura also supports informed decision-making through its report and analytics
+                    features, helping librarians analyze trends, manage inventory, and allocate resources wisely. With
+                    its user-friendly interface and focus on accessibility, Aklatura enhances that overall learning
+                    experience and promotes a culture of responsible library use.
+                </p>
+
+                <div class="tech-stack">
+                    <span>ASP.NET</span>
+                    <span>MS SQL Server</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="project-card">
+
+            <div class="project-image">
+                <img src="img/nutribuddy.png" alt="NutriBuddy">
+            </div>
+
+            <div class="project-info">
+
+                <span class="project-number">
+                    05
+                </span>
+
+                <h3>NutriBuddy</h3>
+
+                <p>
+                    NutriBuddy is a mobile fitness and nutrition application designed to help users achieve healthier
+                    lifestyles through personalized meal planning and fitness tracking. The application provides secure
+                    user authentication, health profile assessment, personalized meal recommendations, calorie
+                    monitoring, and a nutrition calendar. By utilizing user information such as age, gender, height,
+                    weight, and fitness goals, NutriBuddy delivers customized dietary guidance that encourages healthier
+                    eating habits and long-term wellness.
+                </p>
+
+                <div class="tech-stack">
+
+                    <span>Figma</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="project-card reverse">
+
+            <div class="project-image">
+                <img src="img/brightbuds.png" alt="BrightBuds">
+            </div>
+
+            <div class="project-info">
+
+                <span class="project-number">
+                    06
+                </span>
+
+                <h3>BrightBuds</h3>
+
+                <p>
+                    BrightBuds is a mobile application designed to support children aged 7–14 diagnosed with
+                    predominantly inattentive ADHD by promoting routine-building, emotional regulation, and behavioral
+                    consistency. The system integrates therapist-guided task management, mood journaling, and
+                    gamification through a reward-based aquarium progression system, enabling therapists and parents to
+                    monitor the child's progress while extending therapeutic support into the home environment.
+                </p>
+
+                <div class="tech-stack">
+                    <span>Flutter</span>
+                    <span>Dart</span>
+                    <span>Firebase</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="certificates">
+
+        <div class="section-title">
+
+            <h2>Certificates</h2>
+
+            <p>Professional certifications and achievements.</p>
+
+        </div>
+
+        <div class="certificate-grid">
+
+            <button class="certificate-card" type="button" data-certificate="img/networksectcert.png"
+                aria-label="View full Network Security certificate">
+
+                <span class="certificate-image">
+                    <img src="img/networksectcert.png" alt="Network Security certificate preview">
+                </span>
+
+                <span class="certificate-info">
+
+                    <span class="certificate-meta">
+                        <span class="certificate-badge">
+                            <i class="fa-solid fa-certificate"></i>
+                        </span>
+
+                        <span>
+                            <span class="issuer">CERTIPORT</span>
+                            <span class="date">July 2025</span>
+                        </span>
+                    </span>
+
+                    <span class="certificate-title">Network Security</span>
+
+                    <span class="certificate-description">
+                        Certified in network security fundamentals covering threat detection, protection strategies,
+                        and secure network design.
+                    </span>
+
+                    <span class="certificate-link">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        View Certificate
+                    </span>
+
+                </span>
+
+            </button>
+
+            <!-- Add more certificates by duplicating the card above. The grid keeps up to 3 cards per row. -->
+
+        </div>
+
+    </section>
+
+    <!-- Modal for the certificates -->
+
+    <div id="certificateModal" aria-hidden="true">
+
+        <button class="close" type="button" aria-label="Close certificate preview">
+
+            &times;
+
+        </button>
+
+        <img id="certificatePreview" alt="Full certificate preview">
+
+    </div>
+
+    <section id="contact">
+
+        <div class="contact-container">
+
+            <span class="section-tag">
+                Get In Touch
+            </span>
+
+            <h2>
+                Let's Build Something
+                <span>Together.</span>
+            </h2>
+
+            <p>
+                Whether you have a project idea, internship opportunity,
+                or simply want to connect, I'm always open to new experiences.
+                Feel free to reach out through any of the platforms below.
+            </p>
+
+            <div class="contact-cards">
+
+                <!-- Facebook -->
+
+                <a href="https://www.facebook.com/prytj.elmo.quimbo" target="_blank" class="contact-card">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                    <div>
+
+                        <h3>Facebook</h3>
+
+                        <span>@prytj.elmo.quimbo</span>
+
+                    </div>
+
+                </a>
+
+                <!-- Email -->
+
+                <a href="prytjelmo@gmail.com" class="contact-card">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <h3>Email</h3>
+
+                        <span>prytjelmo@gmail.com</span>
+
+                    </div>
+
+                </a>
+
+                <!-- Github -->
+
+                <a href="https://github.com/prytjelmo" target="_blank" class="contact-card">
+
+                    <i class="fa-brands fa-github"></i>
+
+                    <div>
+
+                        <h3>GitHub</h3>
+
+                        <span>github.com/prytjelmo</span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <div class="footer-container">
+
+            <h3>MAW</h3>
+
+            <p>
+                Designed & Developed by Prytj Elmo G. Quimbo
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/prytj.elmo.quimbo" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="mailto:prytjelmo@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <a href="https://github.com/prytjelmo" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+            </div>
+
+            <small>
+                © 2026 All Rights Reserved.
+            </small>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.net.min.js"></script>
+
+    <script>
+        if (window.VANTA && window.THREE) {
+            VANTA.NET({
+                el: "#hero",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200,
+                minWidth: 200,
+                scale: 1,
+                scaleMobile: 1,
+                color: 0x9CB080,
+                backgroundColor: 0x618764
+            });
+        }
+    </script>
+
+    <script>
+        const themeBtn = document.getElementById("theme-toggle");
+        const themeIcon = themeBtn.querySelector(".theme-icon");
+        const menuBtn = document.getElementById("menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        const backToTop = document.getElementById("back-to-top");
+        const hero = document.getElementById("hero");
+        const body = document.body;
+
+        function updateThemeButton() {
+            const isDark = body.classList.contains("dark-theme");
+
+            themeIcon.innerHTML = isDark ? "&#9728;" : "&#9790;";
+            themeBtn.setAttribute(
+                "aria-label",
+                isDark ? "Switch to light theme" : "Switch to dark theme"
+            );
+        }
+
+        if (localStorage.getItem("theme") === "dark") {
+            body.classList.add("dark-theme");
+        }
+
+        updateThemeButton();
+
+        themeBtn.addEventListener("click", () => {
+            body.classList.toggle("dark-theme");
+            themeBtn.classList.remove("spin");
+            void themeBtn.offsetWidth;
+            themeBtn.classList.add("spin");
+
+            const isDark = body.classList.contains("dark-theme");
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+            updateThemeButton();
+        });
+
+        menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            menuBtn.classList.toggle("active");
+
+            const isOpen = navLinks.classList.contains("active");
+            menuBtn.setAttribute("aria-expanded", isOpen);
+            menuBtn.setAttribute(
+                "aria-label",
+                isOpen ? "Close navigation menu" : "Open navigation menu"
+            );
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach((link) => {
+            link.addEventListener("click", (event) => {
+                const targetId = link.getAttribute("href");
+                const target = targetId === "#" ? document.body : document.querySelector(targetId);
+
+                if (target) {
+                    event.preventDefault();
+
+                    if (target === document.body) {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth"
+                        });
+                    } else {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start"
+                        });
+                    }
+                }
+
+                navLinks.classList.remove("active");
+                menuBtn.classList.remove("active");
+                menuBtn.setAttribute("aria-expanded", "false");
+                menuBtn.setAttribute("aria-label", "Open navigation menu");
+            });
+        });
+
+        function toggleBackToTop() {
+            const heroBottom = hero.offsetTop + hero.offsetHeight;
+            backToTop.classList.toggle("show", window.scrollY > heroBottom - 120);
+        }
+
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        window.addEventListener("scroll", toggleBackToTop);
+        window.addEventListener("resize", toggleBackToTop);
+        toggleBackToTop();
+
+        const certificateModal = document.getElementById("certificateModal");
+        const certificatePreview = document.getElementById("certificatePreview");
+        const certificateClose = certificateModal.querySelector(".close");
+
+        function openCertificate(src, altText) {
+            certificatePreview.src = src;
+            certificatePreview.alt = altText || "Full certificate preview";
+            certificateModal.classList.add("show");
+            certificateModal.setAttribute("aria-hidden", "false");
+            body.classList.add("modal-open");
+            certificateClose.focus();
+        }
+
+        function closeCertificate() {
+            certificateModal.classList.remove("show");
+            certificateModal.setAttribute("aria-hidden", "true");
+            body.classList.remove("modal-open");
+            certificatePreview.src = "";
+        }
+
+        document.querySelectorAll(".certificate-card").forEach((card) => {
+            card.addEventListener("click", () => {
+                const image = card.querySelector("img");
+                openCertificate(card.dataset.certificate, image.alt.replace(" preview", ""));
+            });
+        });
+
+        certificateClose.addEventListener("click", closeCertificate);
+
+        certificateModal.addEventListener("click", (event) => {
+            if (event.target === certificateModal) {
+                closeCertificate();
+            }
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape" && certificateModal.classList.contains("show")) {
+                closeCertificate();
+            }
+        });
+    </script>
+
+    <script>
+        /* ==============================
+        Typing Animation
+        ============================== */
+
+        const names = [
+
+            "Prytj Elmo",
+
+            "Mawieee"
+
+        ];
+
+        const typing = document.getElementById("typing");
+
+        let word = 0;
+        let letter = 0;
+        let deleting = false;
+
+        function type() {
+
+            let current = names[word];
+
+            if (!deleting) {
+
+                typing.textContent = current.substring(0, letter);
+
+                letter++;
+
+                if (letter > current.length) {
+
+                    deleting = true;
+
+                    setTimeout(type, 1200);
+
+                    return;
+
+                }
+
+            } else {
+
+                typing.textContent = current.substring(0, letter);
+
+                letter--;
+
+                if (letter < 0) {
+
+                    deleting = false;
+
+                    word++;
+
+                    if (word >= names.length) {
+
+                        word = 0;
+
+                    }
+
+                }
+
+            }
+
+            setTimeout(type, deleting ? 60 : 120);
+
+        }
+
+        type();
+
+    </script>
+</body>
+
+</html>
