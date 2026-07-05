@@ -830,6 +830,45 @@
         window.addEventListener("resize", toggleBackToTop);
         toggleBackToTop();
 
+        const revealItems = document.querySelectorAll(`
+            #about .about-image,
+            #about .about-content,
+            .section-title,
+            .skills-heading,
+            .skills-slider,
+            .project-card,
+            .certificate-card,
+            #contact .section-tag,
+            #contact h2,
+            #contact p,
+            .contact-card,
+            .footer-container > *
+        `);
+
+        if ("IntersectionObserver" in window) {
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.16,
+                rootMargin: "0px 0px -70px 0px"
+            });
+
+            revealItems.forEach((item, index) => {
+                item.classList.add("reveal");
+                item.style.setProperty("--reveal-delay", `${Math.min(index % 4, 3) * 0.08}s`);
+                revealObserver.observe(item);
+            });
+        } else {
+            revealItems.forEach((item) => {
+                item.classList.add("reveal", "show");
+            });
+        }
+
         const certificateModal = document.getElementById("certificateModal");
         const certificatePreview = document.getElementById("certificatePreview");
         const certificateClose = certificateModal.querySelector(".close");
